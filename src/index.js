@@ -22,4 +22,15 @@
 //     console.log("循环体中：" +i)
 // }
 // console.log("循环体外：" +i)
-const a = "Mr.xue";
+// const a = "Mr.xue";
+// let [a,b,c] = [1,2,3];
+// console.log(a)
+// console.log(b)
+// console.log(c)
+// let [foo="true"] = [];
+// console.log(foo)
+// let [foo=false] = [];
+// console.log(foo)
+let [a,b = '薛'] = ['Mr.Xue',undefined]
+console.log(a+b);
+// undefined with null 的区别

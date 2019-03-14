@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // // var a = 1;
 // // console.log(a)
@@ -20,7 +20,22 @@
 //     console.log("循环体中：" +i)
 // }
 // console.log("循环体外：" +i)
-for (var _i = 0; _i < 10; _i++) {
-    console.log("循环体中：" + _i);
-}
-console.log("循环体外：" + i);
+// for (let i=0; i<10;i++) {
+//     console.log("循环体中：" +i)
+// }
+// console.log("循环体外：" +i)
+// const a = "Mr.xue";
+// let [a,b,c] = [1,2,3];
+// console.log(a)
+// console.log(b)
+// console.log(c)
+// let [foo="true"] = [];
+// console.log(foo)
+// let [foo=false] = [];
+// console.log(foo)
+var a = 'Mr.Xue',
+    _undefined = undefined,
+    b = _undefined === undefined ? '薛' : _undefined;
+
+console.log(a + b);
+// undefined with null 的区别
