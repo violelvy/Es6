@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // // var a = 1;
 // // console.log(a)
@@ -74,38 +74,25 @@
 // // 没有开辟新的内存空间，arr1的内存空间映射到arr2
 // 02 rest运算符
 // rest ...
-function xue(first) {
-    for (var _len = arguments.length, arg = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-        arg[_key - 1] = arguments[_key];
-    }
+// function xue (first,...arg) {
+//     // for(let i=0;i<ary.length;i++) {
+//     //     console.log(arg[i]);
+//     // }
+//     for (let val of arg) {ß
+//         console.log(val)
+//     }
+//     // console.log(arg.length);
+// }
+// xue(0,1,2,3,4,5,6,7);
 
-    // for(let i=0;i<ary.length;i++) {
-    //     console.log(arg[i]);
-    // }
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
-
-    try {
-        for (var _iterator = arg[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-            var val = _step.value;
-
-            console.log(val);
-        }
-        // console.log(arg.length);
-    } catch (err) {
-        _didIteratorError = true;
-        _iteratorError = err;
-    } finally {
-        try {
-            if (!_iteratorNormalCompletion && _iterator.return) {
-                _iterator.return();
-            }
-        } finally {
-            if (_didIteratorError) {
-                throw _iteratorError;
-            }
-        }
-    }
-}
-xue(0, 1, 2, 3, 4, 5, 6, 7);
+// 字符串模板
+// let xue = '薛春云';
+// // let say = '嘿大佬。又是元气满满的一天呢' + xue +'也要加油呀';
+// let say = `嘿大佬。又是元气满满的一天呢 ${xue} 也要加油呀`;
+// document.write(say);
+// // document.write(say.indexOf(xue)>0);
+// document.write(say.includes(xue)); //查找
+// // html标签也可以嵌套其中！！！attention  是`（连接符）不是'（单引号）!
+// document.write(say.startsWith(xue));//查找开头
+// document.write(say.endWith(xue));//查找结尾
+document.write('xue|'.repeat(30)); //字符串的复制

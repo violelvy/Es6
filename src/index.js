@@ -86,10 +86,21 @@
 //     // for(let i=0;i<ary.length;i++) {
 //     //     console.log(arg[i]);
 //     // }
-//     for (let val of arg) {
+//     for (let val of arg) {ß
 //         console.log(val)
 //     }
 //     // console.log(arg.length);
 // }
 // xue(0,1,2,3,4,5,6,7);
 
+// 字符串模板
+// let xue = '薛春云';
+// // let say = '嘿大佬。又是元气满满的一天呢' + xue +'也要加油呀';
+// let say = `嘿大佬。又是元气满满的一天呢 ${xue} 也要加油呀`;
+// document.write(say);
+// // document.write(say.indexOf(xue)>0);
+// document.write(say.includes(xue)); //查找
+// // html标签也可以嵌套其中！！！attention  是`（连接符）不是'（单引号）!
+// document.write(say.startsWith(xue));//查找开头
+// document.write(say.endWith(xue));//查找结尾
+document.write('xue|'.repeat(30)); //字符串的复制
