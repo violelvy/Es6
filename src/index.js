@@ -31,6 +31,10 @@
 // console.log(foo)
 // let [foo=false] = [];
 // console.log(foo)
-let [a,b = '薛'] = ['Mr.Xue',undefined]
-console.log(a+b);
+// let [a,b = '薛'] = ['Mr.Xue',null]
+// console.log(a+b);
 // undefined with null 的区别
+// undefined 没有值 
+// null 有值 取的是null
+let {foo,bar} = {foo:'Mr.Xue',bar:'薛'};
+console.log(foo+bar) 
