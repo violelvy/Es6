@@ -103,4 +103,62 @@
 // // html标签也可以嵌套其中！！！attention  是`（连接符）不是'（单引号）!
 // document.write(say.startsWith(xue));//查找开头
 // document.write(say.endWith(xue));//查找结尾
-document.write('xue|'.repeat(30)); //字符串的复制
+// document.write('xue|'.repeat(30)); //字符串的复制
+
+
+
+// 数字的操作
+// 二进制声明 Binary
+// let binary = 0B010101;
+// console.log(binary)
+// // 八进制声明 Octal
+// let octal = 0o666;
+// console.log(octal)
+ 
+// let b = 11/4;
+// // console.log(Number.isFinite(a)) 判断是否为数字
+// //NaN 判断是不是NaN
+// console.log(Number.isNaN(NaN));
+// //是否是整数
+// let a = 12.25
+// console.log(Number.isInteger(a));
+// //转换整数
+// console.log(Number.parseInt(a));
+// //转换为浮点型数据
+// console.log(Number.parseFloat(a)); 
+// let xue = Math.pow(2,53) -1;
+// console.log(xue);
+// console.log(Number.MAX_SAFE_INTEGER);
+// console.log(Number.MIN_SAFE_INTEGER);
+// console.log(Number.isSafeInteger(xue))
+
+
+// es6中新增的数组
+// json数组格式
+// let json = {
+//     '0':'xue',
+//     '1':'薛春云',
+//     '2':'大佬',
+//     length:3
+// }
+// let arr = Array.from(json);
+// 数组里面的方法都存于array中
+// console.log(arr)
+// array.of方法
+// let att = ['3,4,5,6'];
+// let arr = eval(stt)
+// let arr2 = Array.of (5,6,7,8);
+// console.log(arr2)
+//find方法
+// let arr = [1,2,3,4,5,6,7,8,9,10];
+// //数组中的查找
+// console.log(arr.find(function(value,index,arr){
+//     // value 表示当前查找的值
+//     // index 表示索引
+//     // arr  原型
+//     return value >5;
+// }));
+let arr =['xue','薛','大佬'];
+console.log(arr.find(function(value,index,arr) {
+    return value == '哼'
+}))
